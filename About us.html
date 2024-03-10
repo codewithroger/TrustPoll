@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* .about{
+            margin: 50px;
+        } */
+        /* Info section */
+#info {
+  margin: 5rem 0;
+  padding: 4.5rem 1.2rem 2.5rem 1.2rem;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#info > div {
+  width: 80%;
+  padding-right: 5rem;
+  align-self: flex-start;
+}
+
+  #info {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #info > div {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 3rem;
+  }
+  
+  #info h2 {
+    text-align: center;
+  }
+
+
+#info > iframe {
+  max-width: 560px;
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0 1rem 1rem -1rem rgba(55, 56, 58, 0.4);
+}
+#why {
+  padding: 1.5rem 5rem 1.5rem 5rem;
+  text-align: center;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: calc(100%  / 3);
+  margin: 1.5rem;
+  padding: 3rem 2rem 3rem 2rem;
+  border: 1px solid rgba(55, 56, 58, 0.1);
+  border-radius: 5px;
+}
+
+ 
+  .container {
+    flex-direction: column;
+  }
+  
+  .card {
+    width: 100%;
+    margin: 1.5rem auto;
+  }
+
+
+.card:hover {
+  box-shadow: 0 0 2rem -0.7rem rgba(55, 56, 58, 0.2);
+  border: 1px solid #ced4ee;
+}
+
+.icon {
+  width: 50px;
+}
+
+.desc > h3 {
+  margin: 2rem 0 2rem 0;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}#contact {
+  margin-top: 3rem;
+  padding: 0.54rem 5rem 2.5rem 5rem;
+  text-align: center;
+  background-color: #011640;
+  color: #fff;
+}
+
+.contact-icon {
+  width: 2rem;
+  padding: 1rem;
+  filter: invert(100%);
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  padding: 1rem;
+}
+
+
+.contact-details:hover .contact-icon {
+  filter: invert(83%) sepia(39%) saturate(6798%) hue-rotate(308deg) brightness(92%) contrast(107%);
+}
+
+.contact-details:hover {
+  color: #F2797B;
+}
+
+
+    </style>
+</head>
+<body>
+    <section id="about" style="text-align: center; margin: 70px;">
+        <h2>About Us</h2>
+        <p style="margin: 25px 0px 5px 0px; font-size: large;">Welcome to the TrustPoll. We aim to revolutionize the voting process by leveraging blockchain technology to ensure transparency, security, and integrity in elections.</p>
+        <p style= "font-size: large;">Our system allows voters to securely cast their votes from anywhere, while maintaining anonymity and preventing tampering with the results.</p>
+      </section>
+      <section id="why">
+        <h2>Why you should choose TrustPoll</h2>
+        <div class="container">
+          <div class="card">
+            <div class="icon">
+              <img src="./image/easyToUse.svg" alt="easy to use icon" width="200">
+            </div>
+            <div class="desc">
+              <h3>Security</h3>
+              <p>TrustPoll employs advanced cryptographic techniques to safeguard your vote against manipulation or tampering. Each vote is securely recorded on the blockchain, making it immutable and transparent.
+              </p>
+            </div>
+          </div>
+    
+          <div class="card">
+            <div class="icon">
+              <img src="./image/dataPrivacy.svg" alt="data privacy icon" width="200" >
+            </div>
+            <div class="desc">
+              <h3>Transparency</h3>
+              <p>With TrustPoll, you can trust that your vote counts. Our platform provides real-time access to the voting process, allowing you to verify the integrity of the results at any time.
+              </p>
+            </div>
+          </div>
+    
+          <div class="card">
+            <div class="icon" >
+              <img src="./image/research.svg" alt="data privacy icon" width="200" >
+            </div>
+            <div class="desc">
+              <h3>Decentralization</h3>
+              <p>TrustPoll operates on a decentralized network of nodes, eliminating the risk of centralized control or manipulation. This decentralized approach ensures the fairness and reliability of the voting process.
+              </p>
+            </div>
+          </div>
+    
+        </div>
+      </section>
+      <section id="info">
+        <div>
+          <h2 style="text-align: center; margin: 0px 0px 25px 0rem;">How BlockChain Works??</h2>
+          <p style="margin: 25px 0px 5px 0px; font-size: large;">A blockchain is a distributed, immutable, and decentralized ledger at its core that consists of a chain of blocks and each block contains a set of data. The blocks are linked together using cryptographic techniques and form a chronological chain of information</p>
+          <p style="margin: 5px 0px 0px 0px; font-size: large;">Mining involves using computational power to solve complex mathematical problems that maintain and secure the blockchain network..</p>
+        </div>
+        <iframe id="video" height="315" src="https://www.youtube.com/embed/0BrKt26OwW8?rel=0&amp;controls=0&amp;showinfo=0" allowfullscreen></iframe>
+      </section>
+      <section id="contact">
+        <h2>Let's work together</h2>
+        <p>Find me on</p>
+            <div class="contact-links">
+                <a href="https://www.linkedin.com/in/yogeshhitnalli?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app " target="_blank" class="contact-details">
+                <img src="./image/linkedin.svg" alt="linkedin logo" class="contact-icon">LinkedIn
+            </a>
+            <a href="https://github.com/codewithroger" target="_blank" class="contact-details">
+                <img src="./image/github.svg" alt="github logo" class="contact-icon">GitHub
+            </a>
+            <a id="profile-link" href="https://www.instagram.com/im_yogi.hitnalli?igsh=MWNqbnhvaHd2bGl3YQ==" target="_blank" class="contact-details">
+                <img src="./image/freecodecamp.svg" alt="freeCodeCamp logo" class="contact-icon">Instagram
+            </a>
+            
+            </div>
+      </section>
+    
+</div>
+</body>
+</html>
